@@ -42,8 +42,10 @@
 </body>
 
 <script>
-    const width = document.querySelector('.width')
-    const height = document.querySelector('.height')
+    const width = document.querySelector('.width');
+    const height = document.querySelector('.height');
+    width.innerHTML = window.innerWidth;
+    height.innerHTML = window.innerHeight;
     window.addEventListener('resize', ()=>{
         width.innerHTML = window.innerWidth
         height.innerHTML = window.innerHeight
